@@ -32,6 +32,7 @@ public class Main {
             System.out.println("Средняя сумма трат за месяц: " + averageSpend + " рублей");
         }
 
+
         public static void task2 () {
             int[] reverseFullName = generateRandomArray();
             char[] reverseFullName1 = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
