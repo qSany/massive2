@@ -1,5 +1,10 @@
 public class Main {
-
+    public static void main (String[] args) {
+           task1();
+           task2();
+           task3();
+           task4();
+}
 
     public static int[] generateRandomArray() {
         java.util.Random random = new java.util.Random();
@@ -14,8 +19,10 @@ public class Main {
         int[] arr = generateRandomArray();
         double[] payments = {5000.50, 12345.00, -3434.34, 0, 560.87, -1000.00};
         double total = 0.0;
-        for (double payment : payments) ;
-        total += payment;
+        for (double payment : payments) {
+            total += payment;
+        }
+        System.out.println();
 
         System.out.println("Сумма выплат за месяц составляет " + total + "рублей");
     }
@@ -29,12 +36,13 @@ public class Main {
             if (d < min) min = d;
             if (d > max) max = d;
 
-        System.out.printf("Минимальная сумма трат за день составила" + min + "рублей",
-                "Максимальная сумма трат за день составила" + max + "рублей");
+            System.out.printf("Минимальная сумма трат за день составила" + min + "рублей",
+                    "Максимальная сумма трат за день составила" + max + "рублей");
 
+        }
     }
 
-    public static void task3() {
+    public static void task3 () {
         int[] payments = generateRandomArray();
         double averageSpend = 0;
         for (int i = 0; i < payments.length; i++) {
@@ -43,16 +51,19 @@ public class Main {
             System.out.println("Средняя сумма затрат за месяц: " + averageSpend + " рублей");
 
         }
+    }
 
-        public static void task4 () {
-            int[] reverseFullName = generateRandomArray();
-            char[] reverseFullName1 = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-            String result = "";
-            for (int i = reverseFullName.length - 1; i >= 0; i--) {
-                result = reverseFullName[i] + result;
-            }
-            System.out.println(result);
+    public static void task4 () {
+        int[] reverseFullName = generateRandomArray();
+        char[] name = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+
+        for(int i = 0; i < name.length / 2; i++){
+            char temp = name[i];
+            name[i] = name[name.length - i - 1];
+            name[name.length - i - 1] = temp;
         }
+
+        System.out.println(String.valueOf(name));
     }
 }
 
