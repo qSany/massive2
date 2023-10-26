@@ -24,7 +24,6 @@ public class Main {
 
     }
 
-
     public static void task1() {
         int[] payments = generateRandomArray();
         double averageSpend = 0;
