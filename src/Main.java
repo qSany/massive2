@@ -53,6 +53,7 @@ public class Main {
         }
     }
 
+
     public static void task4 () {
         int[] reverseFullName = generateRandomArray();
         char[] name = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
