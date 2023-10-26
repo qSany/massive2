@@ -23,7 +23,6 @@ public class Main {
         System.out.println("Сумма выплат за месяц составляет " + total + "рублей");
 
     }
-
     public static void task1() {
         int[] payments = generateRandomArray();
         double averageSpend = 0;
